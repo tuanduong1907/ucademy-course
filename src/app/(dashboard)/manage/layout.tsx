@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 
 const layout = async ({ children }: { children: React.ReactNode }) => {
   const { userId } = await auth();
+  console.log(userId);
   
   if (!userId) {
     // Nếu không có userId, thực hiện redirect
