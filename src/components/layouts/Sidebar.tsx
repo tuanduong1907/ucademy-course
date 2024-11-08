@@ -2,6 +2,7 @@ import { menuItem } from "@/constants";
 import { TMenuItemProps } from "@/types";
 import React from "react";
 import ActiveLink from "../common/ActiveLink";
+import { UserButton } from "@clerk/nextjs";
 
 const Sidebar = () => {
   return (
@@ -20,6 +21,7 @@ const Sidebar = () => {
           ></MenuItem>
         ))}
       </ul>
+      <UserButton /> 
     </div>
   );
 };
